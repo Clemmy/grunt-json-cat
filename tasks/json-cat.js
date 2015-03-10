@@ -5,7 +5,7 @@ var _ = require('lodash');
 
 module.exports = function (grunt) {
 
-    grunt.registerMultiTask('json_cat', 'Grunt plugin that concatenates multiple JSON files', function () {
+    grunt.registerMultiTask('jsonCat', 'Grunt plugin that concatenates multiple JSON files', function () {
 
         var options = this.options({
             replacer: null,
@@ -28,7 +28,7 @@ module.exports = function (grunt) {
                 }
             });
 
-            grunt.log.writeln('Concatenated ' + chalk.cyan('22') + ' files.');
+            grunt.log.writeln('Concatenated ' + chalk.cyan(filesModifiedCounter) + ' files.');
             grunt.file.write(file.dest, JSON.stringify(json, options.replacer, options.space));
         });
     })
