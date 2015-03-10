@@ -1,0 +1,13 @@
+{
+  "name": "grunt-json-cat",
+  "version": "0.0.1",
+  "description": "A Grunt plugin that concatenates multiple JSON files",
+  "author": "Clement Hoang",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "lodash": "^3.5.0"
+  }
+}
